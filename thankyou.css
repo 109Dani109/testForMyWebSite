@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.5s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.nav {
+    display: flex;
+        background: black;
+    padding: 20px;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+
+.nav .logo {
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.active .nav {
+    background: rgba(0, 0, 0, 0.479);
+}
+
+
+
+.nav li {
+    list-style: none;
+    color: white;
+}
+
+
+.logo img {
+    width: 25px;
+    height: 25px;
+}
+
+
+:root {
+    --fontH2Size: 250% ;
+    --backgroundCards: rgb(231, 230, 230);
+    --colorCards: black;
+    --container-color: rgb(32, 211, 32);
+}
+
+.containerImg {
+    width: 100%;
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+
+.containerImg img {
+    width: 100%;
+    height: max-content;
+    height: auto;
+
+}
+
+.containerImg:hover .containerImg img {
+    transform: scale(1.1);
+}
+
+.realContainer {
+    width: 50%;
+    border: 5px solid rgb(255, 187, 0);
+    margin: 30px auto;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+}
+
+.realContainer:hover .containerImg  {
+    transform: scale(1.5);
+    filter: none;
+}
+
+
+
+.realContainer h1 {
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-size: 250%;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+.realContainer:hover h1  {
+   font-size: 380%;
+}
+
+.mapouter {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.mapouter:hover {
+    transition: 0.5s;
+    filter: none;
+}
+
+
+#searchBox {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    display: block;
+    margin: 50px auto;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.card {
+    background: var(--backgroundCards);
+    width: calc(50% - 30px);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--colorCards);
+}
+
+.card.inActive {
+    transform: scale(1.01);
+    background: #5ae25a;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: var(--fontH2Size);
+    transition: 0.5s;
+}
+
+.containerBottom {
+    width: 599px;
+    height: 300px;
+
+    background: var(--container-color);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --fontH2Size: 100% ;
+      
+    } 
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+    display: flex;align-self: center;
+    margin:0px auto;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+
+.colorchooserContainer{
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

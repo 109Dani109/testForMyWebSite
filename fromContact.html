@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title> Contact Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="fromContact.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+    <body>
+
+        <div class="bigContainer">
+
+            <button id="submitTest"> Simple</button>
+
+            <div class="notificationContainer">
+
+            </div>
+
+
+            <div class="loginContainer">
+
+                <h1> Log In</h1>
+                <div style="display: flex;justify-content: center;">
+                    <form method="post" action="PHPFORM.php" id="formSubmit">
+
+                        <div class="firstNameAndLastName">
+    
+                            <label for="firstName">
+                                First Name:
+                                <input type="text" name = "firstName" id="firstName">
+                            </label>
+    
+                            
+                            <label for="lastName">
+                                Last Name:
+                                <input type="text " name = "name"  id="lastName">
+                            </label>
+
+                        </div>
+                        
+                        <label for="email">
+                            Your email:<br>
+                            <input type="email" name = "email"  id="email">
+                        </label>
+
+                        <label for="message">
+                            Your message: <br><br>
+                            <textarea minlength="150" name = "message" id="message" ></textarea>
+                        </label>
+
+                        <input id="submit" type="submit" value="Submit" > 
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+ 
+        <script src="fromContact.js"></script>
+    </body>
+</html>
