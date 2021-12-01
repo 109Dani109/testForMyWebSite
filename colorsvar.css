@@ -1,0 +1,26 @@
+:root {
+    --mainColor:linear-gradient(142deg, rgba(99,57,238,1) 24%, rgba(45,252,90,1) 100%, rgba(222,207,33,1) 100%, rgba(106,0,255,1) 100%, rgba(154,154,154,1) 100%);
+    --mainColorP:rgb(94,58,212);
+    --mainColorW: rgba(208, 196, 236, 0.842);
+    --h1FontSize:200%;
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    :root {
+      --mainColor:linear-gradient(142deg, rgba(99,57,238,1) 24%, rgba(45,252,90,1) 100%, rgba(222,207,33,1) 100%, rgba(106,0,255,1) 100%, rgba(154,154,154,1) 100%);
+      --mainColorP:rgb(94,58,212);
+      --mainColorW: rgba(208, 196, 236, 0.842);
+      --h1FontSize:150%;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    :root {
+      --mainColor:linear-gradient(142deg, rgba(99,57,238,1) 24%, rgba(45,252,90,1) 100%, rgba(222,207,33,1) 100%, rgba(106,0,255,1) 100%, rgba(154,154,154,1) 100%);
+      --mainColorP:rgb(94,58,212);
+      --mainColorW: rgba(208, 196, 236, 0.842);
+      --h1FontSize:130%;
+    }
+  }
