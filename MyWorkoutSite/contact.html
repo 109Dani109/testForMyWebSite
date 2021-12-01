@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title> Home </title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/jpg" href="photos/logo3.jpg">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+        <link rel="stylesheet" type="text/css" href="colorsvar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body  class="activeNav">
+
+
+        
+
+
+            <div class="nav">
+                <div class="subNav">
+                    <a class="activeBtn" href="home.html"> Home</a>
+                    <a href="home.html"> About</a>
+                    <a href="#home"> Classes</a>
+                    <a href="contact.html"> Contact</a>
+                </div>
+
+                <div class="contactSocial">
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="map" >
+
+                <iframe data-aos="fade-down" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.844269519718!2d24.36952291783445!3d44.43635658892975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ad383ab8baebaf%3A0xe68e4c9fb59c4f81!2sStrada%20Corni%C8%99ei%2C%20Slatina%20230001!5e0!3m2!1sen!2sro!4v1637615759341!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+
+
+
+
+
+      
+        
+
+        <div class="footer" data-aos="fade-up-right">
+
+            <form src="" method="get">
+
+                <h1> 
+                    Let's Get Moving </h1>
+                
+
+                <p>Sign Up For Updates </p>
+                <br>
+                <label for="name">
+                    Full name <br>
+                    <input type="text" class="inputs" name="text">
+                </label>
+               
+                <div class="phoneAndEmail">
+                    <label for="email">
+                        Email*<br>
+                        <input type="email" class="inputs" name="email">
+                    </label>
+    
+                    <label for="phone">
+                        Phone<br>
+                        <input type="phone" class="inputs" name="phone">
+                    </label>
+                </div>
+                
+            
+                <label for="message">
+                    Your message here: (optional)<br><br>
+                    <textarea name="message" minlength="10" ></textarea>
+                </label>
+                <br>
+                <input type="submit" id="contactSubmit" name="submit">
+
+            </form>
+
+
+            <a href="mailto:danyandrei109@gmail.com" class="emailBox">
+
+               <h1>  Send me an email here:</h1>
+
+               <p > danyandrei109@gmail.com </p>
+
+            </a>
+
+            <div class="navFooter">
+                <a href="home.html"> Home</a>
+                <a href="#home"> About</a>
+                <a href="#home"> Classes</a>
+                <a href="#home"> Contact</a>
+                <div class="socialContact"> 
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+
+            <div class="miniFooter" >
+               @ 2021 - Designed by Dani Andrei
+            </div>
+        </div>
+
+
+        
+
+        <script src="contact.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+              duration:1000,
+              once:false
+          });
+        </script>
+        <script>
+            AOS.init({
+              disable: function() {
+                  var maxWidth = 800;
+                  return window.innerWidth < maxWidth;
+              }
+          });
+        </script>
+    </body>
+</html>

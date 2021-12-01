@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title> Home </title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/jpg" href="photos/logo3.jpg">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+        <link rel="stylesheet" type="text/css" href="colorsvar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+
+        <div style="display: none;" class="bigVideoContainer">
+
+            <i class="fas fa-times"></i>
+
+            <video src="Videos/chest.mp4"></video>
+
+        </div>
+
+        <a href="#contactDiv" >
+            <div id="btnMessage" class="pulseAnimation">
+                <i  class="fas fa-comment-lines"></i>
+            </div>
+        </a>
+
+     
+          
+        <div class="logInContainer">
+            
+            <form id="logIn" class="firstTimeDisplay">
+                <i class="far fa-times closeLogIn"></i>
+                <h1> Log In</h1>
+                <div>
+                    <label for="name">
+                        Username:
+                        <input type="text" id="Username" name="name">
+                     
+                    </label>
+                    <br> <br>
+                    <label for="password" style="position:relative">
+                        Password:
+                        <input type="password" id="Password" name="password" >
+                        <i id="passwordVisible" class="fas fa-eye"></i>
+                    </label>
+                </div>
+
+                <h3 id="alertBoxForm"> </h3>
+
+                <input  id="sumbmitLogIn" class="incompletee" type="submit" value="Log In">
+            </form>
+
+        </div>
+
+
+
+
+
+
+        <div class="header">
+
+            <div class="nav">
+                <div class="subNav">
+                    <a class="activeBtn" href="#home"> Home</a>
+                    <a href="home.html"> About</a>
+                    <a id="classes" href="#home"> Classes</a>
+                    <a href="contact.html"> Contact</a>
+
+                </div>
+
+                <div class="contactSocial">
+                    <a  id="LogInBtn" style="margin: 0px 20px; text-align: center;">  Log In</a>
+                    <div class="socialReferance">
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                    </div>
+   
+                </div>
+
+            </div>
+
+            <div class="textHeader">
+                <logo >
+                 
+                </logo>
+            </div>
+
+            <div class="motivationText">
+                Be <span style="font-size: 130%; color: var(--mainColorP);"> perseverent</span> and the results will appear !!!
+            </div>
+
+
+            <div data-aos="zoom-in-up" class="alignJust">
+                <div class="prevDay" >
+                    Previous Day           
+                </div>
+            </div>
+
+
+            <div data-aos="zoom-in-up" class="alignJust5">
+                <div class="nextDay" >
+                    Next Day
+                </div>
+            </div>
+
+
+
+            <a href="#bottom">
+                <i class="far fa-chevron-down"></i>
+            </a>
+            
+            <div style="margin-top: 2900px;" id="bottom">
+
+            </div>
+
+        </div>
+
+
+        <div class="containerWorkout">
+
+            <h1> Today's Workout </h1>
+
+            <div class="videos">
+                
+                <div class="video"  data-aos="fade-up-left" >
+                    <video  muted>
+                        <source src="Videos/chest.mp4" type="video/mp4">
+                        <source src="Videos/chest.mp4" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+
+                <div class="video"  data-aos="fade-up-right">
+                    <video  muted>
+                        <source src="Videos/shoulder.mp4" type="video/mp4">
+                        <source src="Videos/shoulder.mp4" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+      
+        
+
+        <div id="contactDiv" class="footer" data-aos="fade-up-right">
+
+            <form id="contactForm" src="" method="get">
+
+                <h1> 
+                    Let's Get Moving </h1>
+                
+
+                <p>Sign Up For Updates </p>
+                <br>
+                <label for="name">
+                    Full name <br>
+                    <input type="text" class="inputs" name="text">
+                </label>
+               
+                <div class="phoneAndEmail">
+                    <label for="email">
+                        Email*<br>
+                        <input type="email" class="inputs" name="email">
+                    </label>
+    
+                    <label for="phone">
+                        Phone<br>
+                        <input type="phone" class="inputs" name="phone">
+                    </label>
+                </div>
+                
+            
+                <label for="message">
+                    Your message here: (optional)<br><br>
+                    <textarea name="message" minlength="10" ></textarea>
+                </label>
+                <br>
+                <input id="contactSubmit" type="submit" name="submit">
+
+            </form>
+
+
+            <a href="mailto:danyandrei109@gmail.com" class="emailBox">
+
+               <h1>  Send me an email here:</h1>
+
+               <p > danyandrei109@gmail.com </p>
+
+            </a>
+
+            <div class="navFooter">
+                <a href="home.html"> Home</a>
+                <a href="#home"> About</a>
+                <a href="#home"> Classes</a>
+                <a href="contact.html"> Contact</a>
+                <div class="socialContact"> 
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+
+            <div class="miniFooter" data-aos="fade-left">
+               @ 2021 - Designed by Dani Andrei
+            </div>
+        </div>
+
+        <script src="home.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration:1000,
+                once:false
+            }           
+            );
+          </script>
+
+
+          <script>
+              AOS.init({
+                disable: function() {
+                    var maxWidth = 800;
+                    return window.innerWidth < maxWidth;
+                }
+            });
+          </script>
+    </body>
+</html>
